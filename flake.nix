@@ -6,6 +6,6 @@
   outputs = { self, nixpkgs }: {
     packages.x86_64-linux.freedownloadmanager =
       nixpkgs.legacyPackages.x86_64-linux.callPackage
-        .package.nix { };
+        ./package.nix { };
   };
 }
